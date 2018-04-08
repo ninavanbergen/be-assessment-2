@@ -59,12 +59,12 @@ If that succeeds, you need to do an update of homebrew:
 ```javascript
 brew update
 ```
-And finnaly we are going to install MySQL:
+And finally we are going to install MySQL:
 ```javascript
 brew install mysql
 ```
 
-**8.** We are going to install [multer](https://github.com/expressjs/multer):
+**8.** We are also going to install [multer](https://github.com/expressjs/multer):
 ```javascript
 npm install multer
 ```
@@ -74,5 +74,5 @@ npm install multer
 npm install express-session
 ```
 
-That's it! You now have installed all the things you need to make the application work.
+That's it! You now have installed all the things you need to make the application work. Good job.
 
