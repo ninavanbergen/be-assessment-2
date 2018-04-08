@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/aanmelden.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welkom!</h1>
+    <p>Wat is <a href="/">LifeStyle Lovers</a>?</p>
+    <h2>Aanmelden</h2>
+    <!-- Zodra ze klaar zijn met het invullen van deze form, en op submit klikken,
+  dan komen ze als het goed is op de localhost:3000/profile terecht, met hun gegevens erbij -->
+    <form action="/new" enctype="multipart/form-data" method="POST">
+        <label>
+           Naam
+            <input type="text" class="invoeren" name="name" required>
+        </label>
+        <label>
+           Plaats
+            <input type="text" class="invoeren" name="place" required>
+        </label>
+        <label>
+          Omschrijving
+            <input type="text" class="omschrijving" name="description" required>
+        </label>
+        <label>
+           Geslacht
+            <input type="text" class="invoeren" name="sex" required>
+        </label>
+        <label>
+           Valt op
+            <input type="text" class="invoeren" name="genderlike" required>
+        </label>
+        <label>
+          Job
+            <input type="text" class="invoeren" name="job" required>
+        </label>
+        <label>
+          Favorites
+            <input type="text" class="omschrijving" name="favorites" required>
+        </label>
+        <label>
+         Leeftijd
+         <input type="number" class="invoeren" name="age" required>
+     </label>
+     <label>
+        Gebruikersnaam
+         <input type="text" class="invoeren" name="username" required>
+     </label>
+        <label>
+           Wachtwoord
+            <input type="password" class="invoeren" name="password" required>
+        </label>
+        <label>
+          Afbeelding
+          <input type="file" name="img" accept="image/*">
+        </label>
+        <label>
+            <input type="submit">
+        </label>
+    </form>
+</body>
+</html>

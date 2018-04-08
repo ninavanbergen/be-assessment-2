@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/kandidaten.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Kandidaten</h1>
+  <section>
+    <!-- Hier heb ik een forEach loop gemaakt die door de data array gaat die in server.js staat -->
+    <% data.forEach(function (data) { %>
+      <article>
+        <h2><%= data.name %></h2>
+        <h2><%= data.age %></h2>
+        <p>
+          <%= data.description %>
+        </p>
+        <a href="/profilematch/<%= data.id %>">Info</a>
+      </article>
+      <% }) %>
+  </section>
+  <footer>
+    <% if (session && session.loggedIn) { %>
+    <a href="/profile/<%= session.user.id %>"><img src="achtergrond/index.png" alt="home"></a>
+    <% } %>
+    <a href="/kandidates"><img src="achtergrond/kandidaten.png" alt="kandidaten"></a>
+  </footer>
+</body>
+
+</html>

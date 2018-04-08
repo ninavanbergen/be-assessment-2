@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="<%= map %>styles/intro.css">
+  <link rel="stylesheet" href="<%= map %>styles/main.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1><%= id %></h1>
+  <p><%= description %></p>
+  <footer>
+    <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
+    <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidaten"></a>
+  </footer>
+</body>
+
+
+</html>

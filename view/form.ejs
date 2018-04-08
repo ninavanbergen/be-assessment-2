@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/voorkeuren.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <meta charset="UTF-8">
+  <title>File uploads </title>
+</head>
+
+<body>
+  <form action="/profile" method="POST">
+    <label>
+      Welke regio woont u
+      <select name="locatie">
+      <option value="ADAM">Amsterdam</option>
+      <option value="RDAM">Rotterdam</option>
+      <option value="DH">Den Haag</option>
+      <option value="UT">Utrecht</option>
+      <option value="DB">Den Bosch</option>
+      <option value="WO">Woerden</option>
+      </select>
+    </label>
+    <label>
+      Kies de lifestyle die het beste bij u past
+        <select name="lifestyle">
+        <option value="harde-werker">Harde werker</option>
+        <option value="genieten-van-het-leven">Genieten van het leven</option>
+        <option value="gezond-en-sportief-leven">Gezond en sportief leven</option>
+        <option value="geen-van-alle">Geen van de opties</option>
+        <option value="alle-opties">Alle opties</option>
+        </select>
+  </label>
+    <label>
+    Kies een kenmerk dat bij u past
+      <select name="kenmerk">
+      <option value="materialisme">Materialistisch</option>
+      <option value="geld-maakt-niet-gelukkig">Geld maakt niet gelukkig</option>
+      <option value="religieus">Religieus</option>
+      <option value="culinair">Culinaire genieter</option>
+      <option value="famile">Familie gericht</option>
+      </select>
+</label>
+    <button type="submit" name="button"></button>
+  </form>
+  <footer>
+    <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
+    <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidaten"></a>
+  </footer>
+</body>
+
+</html>
