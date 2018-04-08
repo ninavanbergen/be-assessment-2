@@ -3,6 +3,7 @@ My application is a dating application where users can find a partner that can f
 
 ## Install
 If you want to install my application, you have to do the following:
+
 **1.** First you have to git clone my link: 
 ```javascript
 git clone https://github.com/ninavanbergen/be-assessment-2.git
