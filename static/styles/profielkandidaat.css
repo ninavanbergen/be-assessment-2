@@ -1,0 +1,45 @@
+body > a {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    width: 35%;
+    text-align: center;
+}
+
+body > a:last-of-type {
+    margin-bottom:5rem;
+}
+
+h2, h3 {
+    font-size: 1.3rem;
+}
+
+body > img {
+    width: 30vw;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3, p {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+

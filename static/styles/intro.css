@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+p:first-of-type {
+    margin-top: 3rem;
+}
+
+p:last-of-type {
+    margin-bottom: 5rem;
+}
+
+a {
+    margin-top: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+a:last-of-type {
+    margin-top: 3rem;
+    width: 55%;
+}

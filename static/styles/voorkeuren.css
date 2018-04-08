@@ -1,0 +1,220 @@
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+p:last-of-type {
+    margin-bottom: 5rem;
+}
+
+body > a, form a {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+    background: white;
+    border-radius: 3rem;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* RADIO BUTTONS */
+
+/* Customize the label (the container) */
+
+.container {
+    margin-top: 1rem;
+    margin-left: 30%;
+    display: block;
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ------------------- */
+
+/* RADIO BUTTONS SET 2 */
+/* Customize the label (the container) */
+
+.trunk {
+    margin-top: 1rem;
+    margin-left: 30%;
+    display: block;
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.trunk input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checken {
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.trunk:hover input ~ .checken {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.trunk input:checked ~ .checken {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checken:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.trunk input:checked ~ .checken:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.trunk .checken:after {
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+select {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+form:last-of-type .trunk {
+    margin-right: 2rem;
+}
+
+form:last-of-type label:last-of-type {
+    margin-bottom: 5rem;
+}
+
+form:last-of-type {
+    margin-bottom: 8rem;
+}

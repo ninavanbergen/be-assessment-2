@@ -1,0 +1,111 @@
+  body>a, section a {
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    width: 45%;
+    text-align: center;
+  }
+
+  h2, h3 {
+    font-size: 1.3rem;
+  }
+
+  body>img {
+    border-radius: 50%;
+    border-style: solid;
+    width: 40vw;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  h2, h3, p {
+    text-align: center;
+  }
+
+  h2:first-of-type {
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  section:last-of-type {
+    margin-bottom: 6rem;
+  }
+
+  form {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  button {
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    width: 45%;
+    text-align: center;
+  }
+
+  .matchchat input {
+    background: white;
+  }
+
+  .matchchat input:first-of-type {
+    padding: 0.6rem;
+    width: 45%;
+    display: flex;
+    border-radius: 2rem;
+    margin: auto;
+    border: none;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .matchchat input:last-of-type {
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .matchchat input:nth-of-type(2) {
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: white;
+    width: 20%;
+    text-align: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }

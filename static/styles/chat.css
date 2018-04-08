@@ -1,0 +1,63 @@
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+article img {
+    float: left;
+    width: 25vw;
+    margin-left: 1rem;
+}
+
+h2, p {
+    margin-bottom: 0.5rem;
+    margin-left: 8rem;
+    font-size: 1.2rem;
+}
+
+article a {
+    float: right;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    width: 20%;
+    text-align: center;
+}
+
+.chat {
+    margin-top: 2rem;
+}
+
+.chat img {
+    width: 15vw;
+}
+
+.chat h2 {
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+.terug {
+    background: white;
+    font-weight: 500;
+    color: #7083d3;
+    text-align: center;
+    float: left; 
+    border-radius: 2rem;
+    font-size: 1rem;
+    width: 25%;
+    padding: 0.4rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 10rem;
+}

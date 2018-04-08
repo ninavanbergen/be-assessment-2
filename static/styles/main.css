@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(../achtergrond/custom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav */
+
+footer {
+    width: 100%;
+    z-index: 1;
+    background-image: url(../achtergrond/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+footer a:first-of-type  img {
+    margin-right: 1rem;
+}
