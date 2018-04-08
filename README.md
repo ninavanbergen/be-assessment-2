@@ -38,12 +38,12 @@ npm install body-parser
 ```javascript
 npm install multer
 ```
-**7.** Right now we are going to install a very important one. It's called mysql. 
+**7.** Right now we are going to install a very important one. It's called MySQL. 
 
 [Wikpedia](https://nl.wikipedia.org/wiki/SQL) says:
 > SQL (Structured Query Language) is a […] language used in programming and designed for managing data held in a relational database […].
 
-If you don't understand it right away, don't worry, I had the same. Here are some links that explain it more and show you some examples of how to work in mysql:
+If you don't understand it right away, don't worry, I had the same. Here are some links that explain it more and show you some examples of how to work in MySQL:
 
 * [Link 1](https://www.mysql.com/about/)
 
@@ -51,5 +51,28 @@ If you don't understand it right away, don't worry, I had the same. Here are som
 
 * [Link 3](https://www.guru99.com/sql.html)
 
-Take your time to read these websites and to understand mysql, because if you know how mysql works, you will understand my code much better! 
+Take your time to read these websites and to understand MySQL, because if you know how mysql works, you will understand my code much better! 
+
+The first thing you need to do before you'll download MySQL, is download [homebrew](https://brew.sh). Click on the link to see how to download it. 
+
+If that succeeds, you need to do an update of homebrew:
+```javascript
+brew update
+```
+And finnaly we are going to install MySQL:
+```javascript
+brew install mysql
+```
+
+**8.** We are going to install [multer](https://github.com/expressjs/multer):
+```javascript
+npm install multer
+```
+
+**9.** Finally, the last thing we need to install is [session](https://github.com/expressjs/session):
+```javascript
+npm install express-session
+```
+
+That's it! You now have installed all the things you need to make the application work.
 
