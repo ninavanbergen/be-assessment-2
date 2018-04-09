@@ -9,24 +9,19 @@ In that way you can find a partner that suits your life and also has the same in
 So let's go through my application to see how you navigate and how it works. 
 Okay so the first page you see is the intro page, where the app is being explained, and where you can choose if you already have an account or want to register. The user can always go back to read the intro again. 
 
-<img src="imgREADME/home.png" width="200">
-<img src="imgREADME/login.png" width="200">
-<img src="imgREADME/register.png" width="200">
+<img src="imgREADME/home.png" width="200"><img src="imgREADME/login.png" width="200"><img src="imgREADME/register.png" width="200">
 
 After the user signs up or logs in, he or she sees their profile page with their own data. From there the user can go to the matches page, to update or change the profile, to log out, to delete the profile and to the preferences list. 
 After the user updates or changes their profile, it will be changed/updated and saved in the database, the profile data will also be changed/updated on the website. The preferences page is a page where the user can choose between some situations and overall meanings of life and stuff. I haven't finished this page so that's why it looks like this. Eventually I want to make this the page where they describe their lifestyle, and choose from different situations.
 
-<img src="imgREADME/profile.png" width="200">
-<img src="imgREADME/profile2.png" width="200">
-<img src="imgREADME/update.png" width="200">
-<img src="imgREADME/preferences.png" width="200">
+<img src="imgREADME/profile.png" width="200"><img src="imgREADME/profile2.png" width="200"><img src="imgREADME/update.png" width="200"><img src="imgREADME/preferences.png" width="200">
 
 If the user clicks on the heart icon in the navigation bar, the user will go to the matches page. That page contains accounts from the database, that match with the user. The user can click on info to check out their detail page and to chat with them. 
-<img src="imgREADME/matches.png" width="200">
-<img src="imgREADME/profilematch.png" width="200">
+<img src="imgREADME/matches.png" width="200"><img src="imgREADME/profilematch.png" width="200">
 
 So when the user wants to talk to a person, it can be done at the profile page of that person.  
 The user can send a message, and it will be shown above the input. If the other person sends something back, it will also be shown there.
+
 <img src="imgREADME/chat.png" width="200">
 
 It's still a very small application because I didn't have enough time to make it the way I want. I'm very happy that the backend part of this project worked, that was the most important thing on the list. If I had more time I would spend more time on security of the application, and on errors. 
