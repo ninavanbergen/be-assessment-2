@@ -90,8 +90,6 @@ app.get('/profilematch/:id', profileMatch)
 app.post('/chat', saveMessage)
 
 app.get('/logout', logOut)
-app.get('/chats/:id', chatProfile)
-
 app.delete('/delete/:id', deleteAccount)
 app.get('/updatepage', updatePage)
 // Put your updated data in the database
@@ -115,21 +113,6 @@ function renderForm(req, res, users) {
 
 function loginForm(req, res) {
   res.render('login.ejs')
-}
-
-function chatProfile(req, res) {
-  var id = req.params.id
-  connection.query("SELECT * FROM accounts WHERE id = ?", id, function(err, users) {
-    if (err) throw err
-    var user = users[0]
-    // Locals is named locals becauce it contains all the local variables that we give to a template
-    // The req.session shows us who is logged in
-    var locals = {
-      data: user,
-      session: req.session
-    }
-    res.render("chats.ejs", locals)
-  })
 }
 
 // This function tries to make the chat work at the profilematch.ejs template
@@ -168,9 +151,11 @@ function profileMatch(req, res) {
 
 function handleLogin(req, res) {
   var body = Object.assign({}, req.body)
+  // Select the username  from the table accounts
   connection.query("SELECT * FROM accounts WHERE username = ?", body.username, function(err, users) {
     if (err) throw err
     var user = users[0]
+    // If the filled in password matches the actual password in the table accounts
     if (user.password === body.password) {
       // This is the log in part
       req.session.loggedIn = true
@@ -313,7 +298,7 @@ function saveMessage(req, res) {
         map: "../"
       })
     } else {
-      res.redirect('/profilematch/' + body.ander)
+      res.redirect('/profilematch/' + body.other)
     }
   }
 }
