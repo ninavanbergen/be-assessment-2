@@ -3,16 +3,21 @@ My application is a dating application where users can find a partner that can f
 The age is between 20 and 40, and it's only for people that want to find someone that can suit their lifestyle.
 In that way you can find a partner that suits your life and also likes your interests. 
 
-
-![datingapp home](desktop/1.png)
+<img src="imgREADME/home.png" width="200">
 
 ## Description App
 So, let's go through my application to see how you navigate and how it works. 
+Okay so the first page you see is the intro page, where the app is being explained, and where you can choose if you already have an account or want to register. The user can always go back to read the intro again. 
+<img src="imgREADME/home.png" width="200">
+<img src="imgREADME/login.png" width="200">
+<img src="imgREADME/register.png" width="200">
 
-![GitHub home](/images/logo.png)
-![datingapp login](desktop/1.png)
-![datingapp home](desktop/1.png)
-
+After the user signs up or logs in, he or she sees their profile page with their own data. From there the user can go to the matches page, to update or change the profile, to log out, to delete the profile and to the preferences list. 
+After the user updates or changes their profile, it will be changed/updated and saved in the database, and the profile data will also be changed/updated on the website. 
+<img src="imgREADME/profile.png" width="200">
+<img src="imgREADME/profile2.png" width="200">
+<img src="imgREADME/update.png" width="200">
+<img src="imgREADME/update.png" width="200">
 
 ## Install
 If you want to install my application, you have to do the following:
