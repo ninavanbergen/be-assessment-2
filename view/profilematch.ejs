@@ -33,7 +33,13 @@
       <h2><%= message.chatting %></h2>
     </article>
     <% }) %>
-
+<!-- If first checks if there is a session -->
+<!-- So if session = true. Because session has a value that changes into a Boolean inside an if statement -->
+<!-- If session is undefined, it's false -->
+<!-- You also want to know if session.loggedIn = true -->
+<!-- And because && stops with checking if something isn't true, you will get an referenceError if your session.loggedIn checks if session exists -->
+<!-- Thy both have to be true -->
+<!-- But you can't do only session.loggedIn because you really need to know if there is an session, otherwhise there will be a referenceError -->
       <% if (session && session.loggedIn) { %>
         <form class="matchchat" action="/chat" method="POST">
           <label>
