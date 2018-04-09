@@ -1,6 +1,8 @@
 # Lifestyle Lovers
 My application is a dating application where users can find a partner that can fit in their lifestyle. 
 
+## Description
+
 ## Install
 If you want to install my application, you have to do the following:
 
@@ -75,4 +77,30 @@ npm install express-session
 ```
 
 That's it! You now have installed all the things you need to make the application work. Good job.
+
+## Start Server 
+If you want to start the server, you need to do this in your terminal:
+```javascript
+npm start
+```
+## Structure of the project (files, folders)
+My project has some important files and some folders. The server.js file is the file that contains all of my main code. There are a lot of comments there to make it easier to understand. In my static folder are all the 'static' files, so files like css and images. They don't change, that's why they are called static. I also have a folder named view. View contains all of my ejs templates that will be needed in this project, they are templates for every page in my project. 
+
+## server.js 
+Like I said, I made an server.js file that contains all of my main code to make my project work. It binds everything together, I had a lot of work doing this one. Here I am going to explain what you need to have in your server.js to link all the packages we just installed. 
+
+So, we've just installed some things like express and multer and MySQL. The following code links those installed packages and more to my project:
+```javascript
+var express = require('express')
+var mysql = require('mysql')
+```
+I've done this for all of them, so for express, multer, mysql, express-session and body-parser. But also path and ejs. I haven't installed those, but you do need to link them in your file. 
+So I also worked with a lot of app.get and app.post codes, those are requests and responses. The app.post is needed for when someone tries to log in or register. The user basically posts something. The app.get is when someone wants to get a thing from a page, for example going to another page. This is an example of an app.get and an app.post that I have in my server.js file. 
+```javascript
+app.post('/portal', handleLogin)
+app.get('/profile/:id', profile)
+```
+So, when /portal is being asked, the function handleLogin will be runned. This one is about logging in so that is why it is an app.post = the user posts data. /profile/:id is where the user goes after logging in. /:id will be changed by the id of the user. That id is stored in my MySQL database. The function profile will also be runned. 
+
+
 
