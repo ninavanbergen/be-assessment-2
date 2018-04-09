@@ -17,6 +17,7 @@ After the user updates or changes their profile, it will be changed/updated and 
 <img src="imgREADME/profile.png" width="200"><img src="imgREADME/profile2.png" width="200"><img src="imgREADME/update.png" width="200"><img src="imgREADME/preferences.png" width="200">
 
 If the user clicks on the heart icon in the navigation bar, the user will go to the matches page. That page contains accounts from the database, that match with the user. The user can click on info to check out their detail page and to chat with them. 
+
 <img src="imgREADME/matches.png" width="200"><img src="imgREADME/profilematch.png" width="200">
 
 So when the user wants to talk to a person, it can be done at the profile page of that person.  
