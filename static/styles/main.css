@@ -42,5 +42,7 @@ footer {
 }
 
 footer a:first-of-type  img {
+  width: 63%;
     margin-right: 1rem;
+    margin-bottom: 0.2rem;
 }

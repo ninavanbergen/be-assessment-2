@@ -1,0 +1,57 @@
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+p:last-of-type {
+    margin-bottom: 5rem;
+}
+
+body > a, form a {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+    background: white;
+    border-radius: 3rem;
+    font-weight: 500;
+    color: #7083d3;
+    padding: 0.6rem;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+form:last-of-type label:last-of-type {
+    margin-bottom: 5rem;
+}
+
+form:last-of-type {
+    margin-bottom: 8rem;
+}
