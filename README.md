@@ -10,11 +10,15 @@ If you want to install my application, you have to do the following:
 ```javascript
 git clone https://github.com/ninavanbergen/be-assessment-2.git
 ```
+
+
 **2.** Then you need to go to that file, by doing so:
 (if you renamed the file then you need to change the name after cd /)
 ```javascript
 cd /be-assessment-2.git 
 ```
+
+
 **3.** When you're in the file, you need to install some things, let's start with npm. [Here](https://github.com/npm/npm) is a link to an explanation of npm.
 (you will see a download bar, it may take a while)
 ```javascript
@@ -27,19 +31,26 @@ npm init
 
 In the following steps you will learn how to install all the things that you will need to make the application work. I will explain later how you require them all in your js file.
 
+
 **4.** Let's begin with installing express! But what is express? [Here](https://github.com/expressjs/express) is a link to an explanation of express.
 (again, you may see a download bar, it may take a while)
 ```javascript
 npm install express
 ```
+
+
 **5.** We also need to install body-parser. It's a plugin for express, that makes the values that are found in the application easier to read. [Here](https://github.com/expressjs/body-parser) is a full explanation of it. 
 ```javascript
 npm install body-parser
 ```
+
+
 **6.** Let's install multer. [Here](https://github.com/expressjs/multer) is a full explanation of it.
 ```javascript
 npm install multer
 ```
+
+
 **7.** Right now we are going to install a very important one. It's called MySQL. 
 
 [Wikpedia](https://nl.wikipedia.org/wiki/SQL) says:
@@ -66,10 +77,12 @@ And finally we are going to install MySQL:
 brew install mysql
 ```
 
+
 **8.** We are also going to install [multer](https://github.com/expressjs/multer):
 ```javascript
 npm install multer
 ```
+
 
 **9.** Finally, the last thing we need to install is [session](https://github.com/expressjs/session):
 ```javascript
@@ -78,15 +91,19 @@ npm install express-session
 
 That's it! You now have installed all the things you need to make the application work. Good job.
 
+
 ## Start Server 
 If you want to start the server, you need to do this in your terminal:
 ```javascript
 npm start
 ```
+
+
 ## Structure of the project (files, folders)
 My project has some important files and some folders. The server.js file is the file that contains all of my main code. There are a lot of comments there to make it easier to understand. In my static folder are all the 'static' files, so files like css and images. They don't change, that's why they are called static. I also have a folder named view. View contains all of my ejs templates that will be needed in this project, they are templates for every page in my project. 
 
-## server.js 
+
+## Server.js 
 Like I said, I made an server.js file that contains all of my main code to make my project work. It binds everything together, I had a lot of work doing this one. Here I am going to explain what you need to have in your server.js to link all the packages we just installed. 
 
 So, we've just installed some things like express and multer and MySQL. The following code links those installed packages and more to my project:
