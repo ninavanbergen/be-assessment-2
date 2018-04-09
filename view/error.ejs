@@ -10,12 +10,11 @@
 </head>
 
 <body>
+  <!-- These values will be specified in my server.js file -->
   <h1><%= id %></h1>
-  <p><%= description %></p>
-  <footer>
-    <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
-    <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidaten"></a>
-  </footer>
+  <p>
+    <%= description %>
+  </p>
 </body>
 
 

@@ -4,17 +4,16 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/profiel.css">
+  <link rel="stylesheet" href="../styles/profile.css">
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
 
 <body>
   <h1>Profiel</h1>
-  <!-- <img src="styles/images/What-to-wear-2.jpg" alt="profilepicture"> -->
-  <!-- Hier haal ik uit server.js uit de data array gegevens die ik hier nodig heb.
-Vandaar dat ik data.name doe en data.age etc.   -->
-<h2>Naam:</h2>
+  <img src="../uploads/<%= data.img %>" alt="profilepicture">
+  <a href="/kandidates">Ga terug</a>
+  <h2>Naam:</h2>
   <h3><%= data.name %></h3>
   <h2>Leeftijd:</h2>
   <h3><%= data.age %> jaar oud</h3>
@@ -22,15 +21,12 @@ Vandaar dat ik data.name doe en data.age etc.   -->
   <h3><%= data.sex %></h3>
   <h2>Job:</h2>
   <h3><%= data.job %></h3>
-  <h2>Omschrijving:</h2>
-  <p>
-    <%= data.description %>
-  </p>
-  <h2>Favorites</h2>
-  <p>
-    <%= data.favorites %>
-  </p>
+  <h2>Omschrijving lifestyle:</h2>
+  <h3><%= data.description %></h3>
+  <h2>Favoriete dingen uit jouw leven:</h2>
+  <h3><%= data.favorites %></h3>
 
+  <!-- So here I made an forEach loop that runs through messages. You need that to link the form with the MySQL table -->
   <% messages.forEach(function (message, index) { %>
     <article>
       <h2><%= message.ander %></h2>
@@ -38,21 +34,21 @@ Vandaar dat ik data.name doe en data.age etc.   -->
     </article>
     <% }) %>
 
-  <% if (session && session.loggedIn) { %>
-  <form class="matchchat" action="/chat" method="POST">
-    <label>
+      <% if (session && session.loggedIn) { %>
+        <form class="matchchat" action="/chat" method="POST">
+          <label>
       Chat
-<input type="text"  name="chatting" value="Hi">
-<input type="hidden" name="jezelf" value="<%= session.user.id %>">
-<input type="hidden" name="ander" value="<%= data.id %>">
+<input type="text" name="chatting" value="Hi, how are you today?">
+<input type="hidden" class="chat" name="me" value="<%= session.user.id %>">
+<input type="hidden" name="other" value="<%= data.id %>">
 <input type="submit" value="Verstuur">
     </label>
-  </form>
-  <% } %>
-  <footer>
-    <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
-    <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidaten"></a>
-  </footer>
+        </form>
+        <% } %>
+          <footer>
+            <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
+            <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidates"></a>
+          </footer>
 </body>
 
 </html>

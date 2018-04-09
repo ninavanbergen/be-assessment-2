@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Profiel</h1>
+  <!-- So here I need to specify the correct img that is linked to an id in MySQL -->
+  <img src="../uploads/<%= data.img %>" alt="profilepicture">
+  <h2>Naam:</h2>
+  <!-- To present the data from a user, we need to have the data from the table accounts. -->
+  <h3><%= data.name %></h3>
+  <h2>Leeftijd:</h2>
+  <h3><%= data.age %> jaar oud</h3>
+  <h2>Geslacht:</h2>
+  <h3><%= data.sex %></h3>
+  <h2>Valt op:</h2>
+  <h3><%= data.genderlike %></h3>
+  <h2>Job:</h2>
+  <h3><%= data.job %></h3>
+  <h2>Omschrijving lifestyle:</h2>
+  <h3><%= data.description %></h3>
+  <h2>Favoriete dingen uit jouw leven:</h2>
+  <h3><%= data.favorites %></h3>
+  <section>
+    <a href="/updatepage">Wijzig profiel</a>
+    <a href="../form">Voorkeurenlijst</a>
+  </section>
+
+  <section>
+    <a href="/logout">Log uit</a>
+    <!-- data-id = a given attribute -->
+    <button class="deleteButton" data-id="<%= session.user.id %>" id="delete">Verwijder profiel</button>
+  </section>
+  <footer>
+    <!-- to go to the logged in user profile, you need to specify session in the link -->
+    <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
+    <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidates"></a>
+    <script src="../js/delete.js"></script>
+  </footer>
+</body>
+
+</html>

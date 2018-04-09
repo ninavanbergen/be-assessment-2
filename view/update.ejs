@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Profiel wijzigen</h2>
+  <!-- When the user is done filling in the form and clicks on submit, they will be redirected to /profile, with the matching data -->
+    <form action="/update/<%= session.user.id %>" method="POST">
+        <label>
+           Naam
+            <input type="text" class="invoeren" name="name" value="<%= data.name %>">
+        </label>
+        <label>
+           Plaats
+            <input type="text" class="invoeren" name="place">
+        </label>
+        <label>
+          Omschrijving lifestyle
+            <input type="text" class="omschrijving" name="description">
+        </label>
+        <label>
+           Geslacht
+            <input type="text" class="invoeren" name="sex">
+        </label>
+        <label>
+           Valt op
+            <input type="text" class="invoeren" name="genderlike" required>
+        </label>
+        <label>
+          Job
+            <input type="text" class="invoeren" name="job">
+        </label>
+        <label>
+          Favoriete dingen uit jouw leven
+            <input type="text" class="omschrijving" name="favorites">
+        </label>
+        <label>
+         Leeftijd
+         <input type="number" class="invoeren" name="age">
+     </label>
+     <label>
+        Gebruikersnaam
+         <input type="text" class="invoeren" name="username">
+     </label>
+        <label>
+           Wachtwoord
+            <input type="password" class="invoeren" name="password">
+        </label>
+        <label>
+            <input type="submit">
+        </label>
+    </form>
+      <footer>
+        <a href="/profile/<%= session.user.id %>"><img src="../achtergrond/index.png" alt="home"></a>
+        <a href="/kandidates"><img src="../achtergrond/kandidaten.png" alt="kandidaten"></a>
+      </footer>
+</body>
+</html>
