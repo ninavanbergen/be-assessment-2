@@ -184,6 +184,9 @@ function profile(req, res) {
   connection.query("SELECT * FROM accounts WHERE id = ?", id, function(err, users) {
     // When something doesn't go as planned, you will get an error, the server stops
     if (err) throw err
+    // Right here we use users, that comes from the callback up here: (err, users)
+    // The MySQL query gives or an error, or all found users.
+    // We've put the users in a variable so that we can use them
     var user = users[0]
     // Locals is named locals becauce it contains all the local variables that we give to a template
     // The req.session shows us who is logged in, and that someone is logged in
@@ -200,6 +203,8 @@ function nieuwProfile(req, res) {
   res.render('register.ejs')
 }
 
+// https://github.com/deannabosschert/freshstart/blob/master/index.js
+// https://github.com/cmda-be/course-17-18/blob/master/examples/mysql-server/index.js
 function register(req, res, next) {
   // We want to make a new account, we need INSERT for that to also make it in the database
   // You're selecting the table accounts, and then you give all sorts of values and properties
@@ -348,6 +353,7 @@ function updatePage(req, res) {
   })
 }
 
+// https://github.com/mysqljs/mysql#escaping-query-values
 // This function tries to save and update data that has been changed by the user.
 // It tries to save it in the table accounts.
 function update(req, res) {
